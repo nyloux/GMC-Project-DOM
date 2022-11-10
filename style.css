@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.cart-button {
+  background-color: rgb(171, 0, 0);
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.cart-button i {
+  color: white;
+  font-size: 25px;
+}
+.cart-button:hover {
+  background-color: black;
+}
+.cart-button:hover i {
+  transition: all 0.3s ease-in-out;
+  color: red;
+}
+
+.tittle {
+  font-family: "Comforter Brush", cursive;
+}
+
+.product {
+  height: 220px;
+  width: 220px;
+  margin: 20px;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 18px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 18px 3px rgba(0, 0, 0, 0.2);
+}
+.product img {
+  width: 100%;
+  height: 55%;
+  object-fit: cover;
+}
+.product-content {
+  padding: 20px;
+}
+.action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.action button {
+  background-color: #f44336;
+  border: none;
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+.products {
+  padding-top: 50px;
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(3, 220px);
+  gap: 20px;
+  margin: auto;
+}
+.modal {
+  padding-top: 10px;
+  height: 0vh;
+  width: 0vw;
+  background-color: white;
+  position: fixed;
+  top: 120px;
+  right: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 18px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 18px 3px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.modal.active {
+  height: 70vh;
+  width: 50vw;
+}
+.cart-item {
+  margin: 10px;
+  height: 70px;
+  width: 98%;
+  background-color: rgba(171, 0, 123, 0.387);
+  margin: auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.quantity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+}
